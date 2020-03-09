@@ -1,0 +1,16 @@
+{
+    "name": "tolkam/command-bus",
+    "description": "Simple command bus implementation with middleware support",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Tolkam\\CommandBus\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "psr/container": "^1.0",
+        "tolkam/utils": "^1.0"
+    }
+}
