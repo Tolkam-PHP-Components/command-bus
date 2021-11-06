@@ -92,9 +92,7 @@ class HandlerProviderMiddleware implements MiddlewareInterface
     {
         $commandName = $this->commandNameResolver
             ? $this->commandNameResolver->resolve($command)
-            
-            // command may be an anonymous class, so needs to be escaped
-            : addslashes(get_class($command));
+            : get_class($command);
         
         if (
             !isset($this->handlers[$commandName]) &&
