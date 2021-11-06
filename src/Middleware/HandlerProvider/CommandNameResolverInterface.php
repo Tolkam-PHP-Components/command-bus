@@ -7,7 +7,7 @@ interface CommandNameResolverInterface
     /**
      * @param object $command
      *
-     * @return callable|null
+     * @return string
      */
     public function resolve(object $command): string;
 }
